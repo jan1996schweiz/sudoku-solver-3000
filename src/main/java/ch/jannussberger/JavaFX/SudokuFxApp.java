@@ -1,3 +1,12 @@
+/**
+ * This is my JavaFX class and is responsible for the user interface
+*
+*
+* @author Jan Nussberger
+* @version 1.0
+* @since 2021-06-10
+*/
+
 package ch.jannussberger.JavaFX;
 
 import ch.jannussberger.Board.SudokuBoard;
@@ -40,6 +49,9 @@ public class SudokuFxApp extends Application {
             }
         }
 
+        /**
+         * Clear button
+         */
         Button btn = new Button("Clear");
         HBox hBox = new HBox(10);
         hBox.getChildren().add(btn);
@@ -60,8 +72,10 @@ public class SudokuFxApp extends Application {
             }
         });
 
-
-        btn = new Button("Example");
+        /**
+         * Load Text File button
+         */
+        btn = new Button(" Load Text File");
         hBox = new HBox(10);
         hBox.getChildren().add(btn);
         hBox.setAlignment(Pos.BOTTOM_CENTER);
@@ -88,7 +102,9 @@ public class SudokuFxApp extends Application {
 
         });
 
-
+        /**
+        *Solver button
+        */
         btn = new Button("Solve");
         hBox = new HBox(10);
         hBox.getChildren().add(btn);
@@ -101,6 +117,7 @@ public class SudokuFxApp extends Application {
 
                 SudokuSolver s = new SudokuSolver();
                 SudokuBoard partial = new SudokuBoard();
+
                 for (int r = 0; r < 9; r++) {
                     for (int c = 0; c < 9; c++) {
                         try {
@@ -137,8 +154,3 @@ public class SudokuFxApp extends Application {
     }
 
 }
-/*
-    Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-    primaryStage.setTitle("Hello World");
-
- */

@@ -1,3 +1,12 @@
+/**
+ * This is my JavaFX class and is responsible to read in text files
+ *
+ *
+ * @author Jan Nussberger
+ * @version 1.0
+ * @since 2021-06-10
+ */
+
 package ch.jannussberger.Importer;
 
 import javax.swing.*;

@@ -8,6 +8,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SudokuSolverTest {
 
+    /**
+     * tests that the same number occurs only once in a row
+     */
     @Test
     void testVailidRow() {
         SudokuSolver s = new SudokuSolver();
@@ -19,6 +22,10 @@ class SudokuSolverTest {
         b.set(1, 1, 9);
         assertTrue(!s.vailidRow(b, 1));
     }
+
+    /**
+     * tests that the same number occurs only once in a rows
+     */
     @Test
     void testVailidAllRow() {
         SudokuSolver s = new SudokuSolver();
@@ -38,6 +45,9 @@ class SudokuSolverTest {
         assertTrue(!s.validAllRows(b));
     }
 
+    /**
+     * tests that the same number occurs only once in a colum
+     */
     @Test
     void testVailidColumn() {
         SudokuSolver s = new SudokuSolver();
@@ -49,6 +59,10 @@ class SudokuSolverTest {
         b.set(1, 1, 9);
         assertTrue(!s.vailidColumn(b, 1));
     }
+
+    /**
+     * tests that the same number occurs only once in all column
+     */
     @Test
     void testVailidAllColumn() {
         SudokuSolver s = new SudokuSolver();
@@ -68,6 +82,9 @@ class SudokuSolverTest {
         assertTrue(!s.validAllColumn(b));
     }
 
+    /**
+     * tests that the same number occurs only once in a square
+     */
     @Test
     void testVailidSquares() {
         SudokuSolver s = new SudokuSolver();
@@ -78,6 +95,10 @@ class SudokuSolverTest {
         b.set(1, 1, 9);
         assertTrue(!s.vailidSquares(b, 0, 0));
     }
+
+    /**
+     * tests that the same number occurs only once in all squares
+     */
     @Test
     void testVailidAllSquares() {
         SudokuSolver s = new SudokuSolver();
@@ -97,6 +118,9 @@ class SudokuSolverTest {
         assertTrue(!s.validAllSquares(b));
     }
 
+    /**
+     * test the method completeAndValid
+     */
     @Test
     void testValidAndComplete() {
         SudokuSolver s = new SudokuSolver();
@@ -210,6 +234,9 @@ class SudokuSolverTest {
         assertTrue(s.completeAndValid(b));
     }
 
+    /**
+     * test to see if the solver works
+     */
     @Test
     void testSolve() {
         SudokuSolver s = new SudokuSolver();

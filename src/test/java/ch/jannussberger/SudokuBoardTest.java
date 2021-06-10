@@ -1,3 +1,12 @@
+/**
+ * Junit test class to test the board
+ *
+ *
+ * @author Jan Nussberger
+ * @version 1.0
+ * @since 2021-06-10
+ */
+
 package ch.jannussberger;
 
 import ch.jannussberger.Board.SudokuBoard;
@@ -7,11 +16,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SudokuBoardTest {
 
+    /**
+     * test the basic constructor
+     */
     @Test
     void testBoard() {
         SudokuBoard b = new SudokuBoard();
     }
 
+    /**
+     * tests that there are no duplicates numbers
+     */
     @Test
     void testBoardBoard() {
         SudokuBoard b = new SudokuBoard();
@@ -28,6 +43,10 @@ class SudokuBoardTest {
         }
     }
 
+    /**
+     * tests the getter
+     * tests that everything is null when I create it
+     */
     @Test
     void get() {
         SudokuBoard b = new SudokuBoard();
@@ -38,6 +57,11 @@ class SudokuBoardTest {
         }
     }
 
+
+    /**
+     * tests the setter
+     * tests that if I set one it turns to one
+     */
     @Test
     void set() {
         SudokuBoard b = new SudokuBoard();
