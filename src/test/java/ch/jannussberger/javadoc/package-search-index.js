@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"ch.jannussberger"},{"l":"ch.jannussberger.Board"},{"l":"ch.jannussberger.Importer"},{"l":"ch.jannussberger.JavaFX"},{"l":"ch.jannussberger.Solver"}]
