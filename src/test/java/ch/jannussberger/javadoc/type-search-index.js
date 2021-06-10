@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"ch.jannussberger.Board","l":"SudokuBoard"},{"p":"ch.jannussberger","l":"SudokuBoardTest"},{"p":"ch.jannussberger.JavaFX","l":"SudokuFxApp"},{"p":"ch.jannussberger.Solver","l":"SudokuSolver"},{"p":"ch.jannussberger","l":"SudokuSolverTest"},{"p":"ch.jannussberger.Importer","l":"SudokuTextFileImporter"}]

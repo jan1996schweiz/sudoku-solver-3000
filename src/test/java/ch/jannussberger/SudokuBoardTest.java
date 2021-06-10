@@ -12,7 +12,8 @@ package ch.jannussberger;
 import ch.jannussberger.Board.SudokuBoard;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 class SudokuBoardTest {
 
